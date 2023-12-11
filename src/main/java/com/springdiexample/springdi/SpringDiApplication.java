@@ -9,9 +9,9 @@ import org.springframework.context.ApplicationContext;
 public class SpringDiApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext act = SpringApplication.run(SpringDiApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication.run(SpringDiApplication.class, args);
 
-		MyController myController = act.getBean(MyController.class);
+		MyController myController = applicationContext.getBean(MyController.class);
 
 		System.out.println("This is from main method!!!");
 
